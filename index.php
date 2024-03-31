@@ -34,6 +34,91 @@
     <!-- header section ends-->
 
 
+    <!--home section starts-->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Travel Around the world</h3>
+                        <a href="package.php" class="btn">Discover More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Discover The New Places</h3>
+                        <a href="package.php" class="btn">Discover More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Make Your Tour Worthwhile</h3>
+                        <a href="package.php" class="btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!--home section ends-->
+
+
+    <!--services section starts-->
+    <section class="services">
+        <h1 class="heading-title">Our Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/travel-and-tourism.png" alt="">
+                <h3>Adventure</h3>
+            </div>
+            <div class="box">
+                <img src="images/maps.png" alt="">
+                <h3>Tour Guide</h3>
+            </div>
+            <div class="box">
+                <img src="images/fire.png" alt="">
+                <h3>Camp Fire</h3>
+            </div>
+            <div class="box">
+                <img src="images/hiking.png" alt="">
+                <h3>Trekking</h3>
+            </div>
+            <div class="box">
+                <img src="images/jeeps.png" alt="">
+                <h3>Off Road</h3>
+            </div>
+            <div class="box">
+                <img src="images/tent.png" alt="">
+                <h3>Camping</h3>
+            </div>
+        </div>
+
+    </section>
+    <!--services section ends-->
+
+    <!--home about section starts-->
+    <section class="home-about">
+        <div class="image">
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Excepturi accusamus fugiat ut natus blanditiis, iusto obcaecati, 
+                tenetur ea nam neque tempore nulla officiis! Eos qui, 
+                quibusdam soluta error porro consequuntur.</p>
+            <a href="about.php" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--home about section ends-->
+
+    <!--home package section starts-->
+    <!--home package section ends-->
 
 
 
@@ -79,11 +164,23 @@
             </div>
         </div>
 
-
+        <div class="credit">Created By <span> Aliza Khalid & Syeda Masooma Raza </span> | All rights reserved </div>
     </section>
     <!--footer ends-->
 <!--js link-->
 <script src="js/script.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper
+            var swiper = new Swiper(".home-slider", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+    </script>
 
 <!--swiper js link-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
